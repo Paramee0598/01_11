@@ -4,10 +4,13 @@
 #include <stdlib.h> 
 
 int main() {
+	char F[100] = {};
+	printf("input from file :");
+	scanf("%s", &F);
 	char txt[30]; 
 	int count = 0; 
 	FILE  *fpt;
-	fpt = fopen("C:/Users/Bravo/source/repos/01_11/01_11/Debug/file/data1.txt", "r");
+	fpt = fopen(F, "r");
 
 
 	if (fpt == NULL) {
